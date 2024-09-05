@@ -22,7 +22,7 @@ def find_proper_table(df, key):
     return None
 
 def convert_table(table_used):
-    file = "data/TableKey.txt"
+    file = "../data/TableKey.txt"
     df = read_file(file)
 
     sql_table = table_used
