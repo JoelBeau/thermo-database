@@ -3,7 +3,7 @@
 import mysql.connector
 from tabulate import tabulate
 
-from scripts.key2table import convert_table
+from key2table import convert_table
 
 
 def run_sql_cmd(sql_table, column, value):
