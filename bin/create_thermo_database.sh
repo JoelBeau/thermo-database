@@ -2,13 +2,16 @@
 chmod +x ../scripts/install_depend.sh
 sudo ./scripts/install_depend.sh
 
+CURRENT_DIR=$(pwd)
+DAT_DIR=$CURRENT_DIR/data
+
 cd /var/lib/mysql-files
-cp -r /home/jbeau/thermodynamics/data .
+cp -r $DAT_DIR .
 
 # Create the database if it doesn't exist
 DB_NAME="test"
 
-cd /home/jbeau/thermodynamics/scripts
+cd $CURRENT_DIR/scripts
 
 sudo mysql -e "CREATE DATABASE IF NOT EXISTS $DB_NAME;"
 
