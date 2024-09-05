@@ -1,6 +1,6 @@
 #!/bin/bash
-
-sudo ./install_depend.sh
+chmod +x ../scripts/install_depend.sh
+sudo ./scripts/install_depend.sh
 
 cd /var/lib/mysql-files
 cp -r /home/jbeau/thermodynamics/data .
@@ -18,7 +18,7 @@ execute_sql_script() {
     sudo mysql $DB_NAME <$script_path
 }
 
-dont_run=("create_thermo_database.sh" "thermodynamics.db")
+dont_run=("create_thermo_database.sh" "thermodynamics.db" "table2cmd.py" "key2table.py" "install_depend.sh")
 
 for i in $(find ./ -type f); do
     filename=$(basename "$i")
