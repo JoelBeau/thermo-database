@@ -1,8 +1,10 @@
+#!/bin/bash
+
 # #Install dependencies
-# sudo ../scripts/install_depend.sh
+sudo scripts/install_depend.sh
 
 # #Create the database
-# sudo ../scripts/create_thermo_database.sh
+sudo scripts/create_thermo_database.sh
 
 #Add the bin directory to the PATH
 echo "export PATH=\$PATH:$(pwd)/bin" >> ~/.bashrc

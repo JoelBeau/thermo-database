@@ -1,17 +1,16 @@
 #!/bin/bash
 
+cd scripts/
+
 CURRENT_DIR=$(pwd)
 DAT_DIR=$CURRENT_DIR/../data
 
 cd /var/lib/mysql-files
 cp -r $DAT_DIR .
 
-# Create the database if it doesn't exist
-DB_NAME="test"
+DB_NAME="thermo"
 
 cd $CURRENT_DIR
-
-sudo mysql -e "CREATE DATABASE IF NOT EXISTS $DB_NAME;"
 
 # Function to execute SQL scripts
 execute_sql_script() {
