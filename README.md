@@ -27,6 +27,6 @@ This project automates the setup of a thermodynamics database using MySQL, bash,
 4. Run the Python lookup script to query the database:
 
    ```bash
-   scripts/table2cmd.py
+   ./table2cmd
    ```
 
