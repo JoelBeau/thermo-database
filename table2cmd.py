@@ -8,8 +8,8 @@ from scripts.key2table import convert_table
 
 def run_sql_cmd(sql_table, column, value):
     config = {
-        "user": "jbeau",
-        "password": "MaverickIT16$",
+        "user": "thermo_user",
+        "password": "password",
         "host": "localhost",
         "database": "thermodynamics",
     }
