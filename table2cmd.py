@@ -1,14 +1,7 @@
 #!/usr/bin/env python
-import sys
-import os
+
 import mysql.connector
 from tabulate import tabulate
-
-# Add the parent directory of the bin directory to the Python path
-script_dir = os.path.dirname(os.path.realpath(__file__))
-project_root = os.path.abspath(os.path.join(script_dir, os.pardir))
-sys.path.append(project_root)
-
 
 from scripts.key2table import convert_table
 
