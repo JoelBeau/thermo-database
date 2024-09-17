@@ -1,5 +1,5 @@
 import pandas as pd
-import sys
+import os
 
 
 def read_file(file):
@@ -22,7 +22,10 @@ def find_proper_table(df, key):
     return None
 
 def convert_table(table_used):
-    file = "data/TableKey.txt"
+    # Determine the script's directory
+    script_dir = os.path.dirname(os.path.realpath(__file__))
+    # Construct the absolute path to the file
+    file = os.path.join(script_dir, "../data/TableKey.txt")
     df = read_file(file)
 
     sql_table = table_used
