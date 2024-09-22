@@ -1,7 +1,7 @@
 
 # Thermodynamics Database Project
 
-This project automates the setup of a thermodynamics database using MySQL, bash, and Python for storing and querying thermodynamics table data.
+This project automates the setup of a thermodynamics database, which stores thermodynamic property tables, using MySQL and bash. Additionally, it includes a user-friendly Python script for querying the data, making it easy to retrieve thermodynamic properties with minimal effort.
 
 ## How to Run
 
