@@ -16,11 +16,6 @@ sudo apt-get install pkg-config -y
 
 sudo service mysql start
 
-#Install Python libraries
-pip install mysql
-pip install pandas
-pip install tabulate
-
 #Create the database
 sudo mysql <<EOF
 CREATE DATABASE IF NOT EXISTS thermo;
