@@ -10,16 +10,16 @@ echo "Installing dependencies..."
 sudo apt-get install mysql-server -y
 sudo apt-get install python3 -y
 sudo apt-get install python-is-python3 -y
-sudo apt-get install pip3 -y
+sudo apt-get install pip -y
 sudo apt-get install libmysqlclient-dev -y
 sudo apt-get install pkg-config -y
 
 sudo service mysql start
 
 #Install Python libraries
-pip3 install mysql
-pip3 install pandas
-pip3 install tabulate
+pip install mysql
+pip install pandas
+pip install tabulate
 
 #Create the database
 sudo mysql <<EOF
