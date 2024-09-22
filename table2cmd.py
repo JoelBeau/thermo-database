@@ -16,8 +16,10 @@ def run_sql_cmd(sql_table, column, value):
 
     conn = mysql.connector.connect(**config)
     cursor = conn.cursor()
-
-    sql_cmd = f"SELECT * FROM {sql_table} WHERE {column} = '{value}'"
+    if column is None or value is None:
+        sql_cmd = f"SELECT * FROM {sql_table}"
+    else: 
+        sql_cmd = f"SELECT * FROM {sql_table} WHERE {column} = '{value}'"
 
     try:
         cursor.execute(sql_cmd)
@@ -102,22 +104,26 @@ def convert2table():
         state = "superheated"
 
     #Column names to search by
-    col_names = ("temperature", "pressure")
+    lookup_type = ("Look up by temperature", "Get all data from table")
 
     print("")
 
     #Print column names available to search by
-    for i in range(len(col_names)):
-        print(f"{i+1}. {col_names[i]}")
+    for i in range(len(lookup_type)):
+        print(f"{i+1}. {lookup_type[i]}")
 
     #User selects column name to search by
     print(f"\nLook up name? select from the list above (1-2)")
     lookup_name = input()
-    lookup_name = col_names[int(lookup_name) - 1]
+    lookup_name = lookup_type[int(lookup_name) - 1]
 
-    #User enters value to search by
-    print(f"Look up value for {lookup_name}?")
-    lookup_val = input()
+    lookup_val = 0
+
+    #User enters value to search by if they selected the first option
+    if lookup_name == "Look up by temperature":
+        print(f"Look up value for {lookup_name}?")
+        lookup_name = "temperature"
+        lookup_val = input()
 
     #Create table name in correct format
     if element == "compr_liq_water":
@@ -126,18 +132,24 @@ def convert2table():
         table = {f"{state}_{element}_{pressure}": [f"{lookup_name}", f"{lookup_val}"]}
     else:
         table = {f"{state}_{element}_{property}": [f"{lookup_name}", f"{lookup_val}"]}
-    return table
+    return lookup_name, table
 
 
-table_w_look_up = convert2table()
+lookup_name, table_w_look_up = convert2table()
 sql_table = table_w_look_up.keys()
 sql_table = list(sql_table)[0]
 column = table_w_look_up[sql_table][0]
 value = table_w_look_up[sql_table][1]
 
-print(f"Running sql command: SELECT * FROM {sql_table} WHERE {column} = {value}...")
+if lookup_name == "temperature":
+    print(f"Running sql command: SELECT * FROM {sql_table} WHERE {column} = {value}...")
+else:
+    print(f"Running sql command: SELECT * FROM {sql_table}...")
 
-run_sql_cmd(sql_table, column, value)
+if lookup_name == "temperature":
+    run_sql_cmd(sql_table, column, value)
+else:
+    run_sql_cmd(sql_table, None, None)
 
 table = convert_table(sql_table)
 
