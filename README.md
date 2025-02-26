@@ -3,7 +3,7 @@
 This project automates the creation and installation of a thermodynamics database, which stores common thermodynamic property tables, using MySQL and bash. Additionally, it includes a user-friendly Python script for querying the data, making it easy to retrieve thermodynamic properties with minimal effort.
 
 ## Notice
--This project is meant to run as a containerized application using Docker, on a Linux distribution. Right now, it is not meant to be run on Windows or MacOS. If you have suggestions for making it work on those systems, please let me know.
+-This project is meant to run as a containerized application using Docker, on a Linux distribution. Right now, it is not meant to be run on Windows or MacOS. If you have suggestions for making it work on those systems, please let me know.  
 -If you are on a different Linux distribution other than Ubuntu, you may need to change the installation commands to match your distribution.
 
 ## Dependencies
