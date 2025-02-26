@@ -1,7 +1,17 @@
 
 # Thermodynamics Database Project
-
 This project automates the creation and installation of a thermodynamics database, which stores common thermodynamic property tables, using MySQL and bash. Additionally, it includes a user-friendly Python script for querying the data, making it easy to retrieve thermodynamic properties with minimal effort.
+
+## Notice
+This project is meant to run as a containerized application using Docker, on a Linux system. Right now, it is not meant to be run on Windows or MacOS. If you have suggestions for making it work on those systems, please let me know.
+
+## Prerequisites
+- Docker
+- MySQL
+- Python 3
+- Python libraries: mysql-connector-python, pandas
+
+
 
 ## Install Docker if not already installed
    ```bash
@@ -34,7 +44,8 @@ This project automates the creation and installation of a thermodynamics databas
 
 4. Start MySQL server
    
-   This will fail the first time, but it will create the database and tables.  After it fails, just run it again.
+   This will fail the first time, but it fixes itself.  After it fails, just run it again.
+
    ```bash
       sudo service mysql start
    ```
