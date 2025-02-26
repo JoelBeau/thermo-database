@@ -37,11 +37,7 @@ This project automates the setup of a thermodynamics database, which stores ther
    This will fail the first time, but it will create the database and tables.  After it fails, just run it again.
    ```bash
       sudo service mysql start
-
-   ```bash
-      sudo service mysql start
    ```
-
    If anyone has a better way to do this, please let me know.
 
 5. Run the python script for querying the database
