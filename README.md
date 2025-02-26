@@ -17,16 +17,35 @@ This project automates the setup of a thermodynamics database, which stores ther
       cd thermo-database
    ```
 
-2. Run the setup script to install dependencies and set up the database:
+2. Create a docker image
 
    ```bash
-   sudo ./setup.sh
+      docker build --progess=tty -t thermo-database .
    ```
+   Note: ```bash --progess=tty`` is optional, just shows each command running
 
-
-4. Run the Python lookup script to query the database:
+3. Run docker container interactively
 
    ```bash
-   ./table2cmd.py
+      docker run -it --name thermo-database thermo-database
+   ```
+   Note: you may change the name to anything you want, or not use it at all (docker will assign random name), 
+   but it is useful for stopping and starting the container
+
+4. Start MySQL server
+   
+   This will fail the first time, but it will create the database and tables.  After it fails, just run it again.
+   ```bash
+      sudo service mysql start
+
+   ```bash
+      sudo service mysql start
    ```
 
+   If anyone has a better way to do this, please let me know.
+
+5. Run the python script for querying the database
+
+   ```bash
+      python query_database.py
+   ```
