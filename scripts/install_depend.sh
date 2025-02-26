@@ -13,6 +13,8 @@ sudo apt-get install python-is-python3 -y
 sudo apt-get install libmysqlclient-dev -y
 sudo apt-get install pkg-config -y
 
+sudo service mysql start
+
 #Install Python libraries
 sudo apt-get install python3-pandas -y
 sudo apt-get install python3-tabulate -y
