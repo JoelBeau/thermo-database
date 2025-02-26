@@ -10,7 +10,6 @@ echo "Installing dependencies..."
 sudo apt-get install mysql-server -y
 sudo apt-get install python3 -y
 sudo apt-get install python-is-python3 -y
-sudo apt-get install pip -y
 sudo apt-get install libmysqlclient-dev -y
 sudo apt-get install pkg-config -y
 
