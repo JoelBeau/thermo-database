@@ -54,7 +54,7 @@ This project automates the creation and installation of a thermodynamics databas
 5. Run the python script for querying the database
 
    ```bash
-      ./table2cmd.py
+      table2cmd
    ```
    If you have suggestions for improving the script, please let me know.
 
