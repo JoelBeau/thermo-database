@@ -11,7 +11,7 @@ def run_sql_cmd(sql_table, column, value):
         "user": "thermo_user",
         "password": "password",
         "host": "localhost",
-        "database": "thermodynamics",
+        "database": "thermo",
     }
 
     conn = mysql.connector.connect(**config)
