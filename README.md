@@ -64,7 +64,7 @@ This project automates the creation and installation of a thermodynamics databas
       exit
    ```
 
-7. To start the container again
+7. To start the container and use it again
 
    ```bash
       docker start thermo-database
