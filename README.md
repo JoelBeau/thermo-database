@@ -22,7 +22,7 @@ This project automates the setup of a thermodynamics database, which stores ther
    ```bash
       docker build --progess=tty -t thermo-database .
    ```
-   Note: ```bash --progess=tty``` is optional, just shows each command running
+   Note: ```bash --progess=tty``` is optional, just shows each command running. You can also rename the image to anything you want.
 
 3. Run docker container interactively
 
@@ -30,7 +30,7 @@ This project automates the setup of a thermodynamics database, which stores ther
       docker run -it --name thermo-database thermo-database
    ```
    Note: you may change the name to anything you want, or not use it at all (docker will assign random name), 
-   but it is useful for stopping and starting the container
+   but it is useful for stopping and starting the container.
 
 4. Start MySQL server
    
@@ -45,3 +45,19 @@ This project automates the setup of a thermodynamics database, which stores ther
    ```bash
       python query_database.py
    ```
+   If you have suggestions for improving the script, please let me know.
+
+6. Stop the docker container
+
+   ```bash
+      exit
+   ```
+
+7. To start the container again
+
+   ```bash
+      docker start thermo-database
+      docker attach thermo-database
+   ```
+
+
