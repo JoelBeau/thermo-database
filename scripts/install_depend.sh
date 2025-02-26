@@ -17,9 +17,11 @@ sudo service mysql start
 
 #Install Python libraries
 sudo apt-get install python3-pandas -y
-sudo apt-get install python3-mysql -y
 sudo apt-get install python3-tabulate -y
-sudo apt-get install python3-mysql-connector-python -y
+sudo apt-get install python3-pip -y
+
+pip install mysql
+pip install mysql-connector-python
 
 #Create the database
 sudo mysql <<EOF
