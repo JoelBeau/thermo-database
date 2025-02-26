@@ -5,11 +5,11 @@ This project automates the creation and installation of a thermodynamics databas
 ## Notice
 This project is meant to run as a containerized application using Docker, on a Linux distribution. Right now, it is not meant to be run on Windows or MacOS. If you have suggestions for making it work on those systems, please let me know.
 
-## Prerequisites
+## Dependencies
 - Docker
 - MySQL
 - Python 3
-- Python libraries: mysql-connector-python, pandas
+- Python libraries: mysql-connector-python, pandas, mysqlclient
 
 
 
