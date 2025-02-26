@@ -4,7 +4,8 @@ This project automates the creation and installation of a thermodynamics databas
 
 ## Notice
 -This project is meant to run as a containerized application using Docker, on a Linux distribution. Right now, it is not meant to be run on Windows or MacOS. If you have suggestions for making it work on those systems, please let me know.  
--If you are on a different Linux distribution other than Ubuntu, you may need to change the installation commands to match your distribution.
+-If you are on a different Linux distribution other than Ubuntu, you may need to change the installation commands to match your distribution.  
+-This project is a work in progress, and I am open to suggestions for improvement. Please let me know if you have any ideas or feedback.
 
 ## Dependencies
 - Docker
