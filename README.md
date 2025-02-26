@@ -22,7 +22,7 @@ This project automates the setup of a thermodynamics database, which stores ther
    ```bash
       docker build --progess=tty -t thermo-database .
    ```
-   Note: ```bash --progess=tty`` is optional, just shows each command running
+   Note: ```bash --progess=tty``` is optional, just shows each command running
 
 3. Run docker container interactively
 
