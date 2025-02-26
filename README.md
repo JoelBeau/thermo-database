@@ -13,7 +13,6 @@ This project automates the creation and installation of a thermodynamics databas
 - Python libraries: mysql-connector-python, pandas, mysqlclient
 
 
-
 ## Install Docker if not already installed
    ```bash
       sudo apt-get install docker
