@@ -1,14 +1,14 @@
 
 # Thermodynamics Database Project
 
-This project automates the setup of a thermodynamics database, which stores thermodynamic property tables, using MySQL and bash. Additionally, it includes a user-friendly Python script for querying the data, making it easy to retrieve thermodynamic properties with minimal effort.
+This project automates the creation and installation of a thermodynamics database, which stores common thermodynamic property tables, using MySQL and bash. Additionally, it includes a user-friendly Python script for querying the data, making it easy to retrieve thermodynamic properties with minimal effort.
 
-## Install Docker
+## Install Docker if not already installed
    ```bash
       sudo apt-get install docker
    ```
 
-### How to Run
+### How to use
 
 1. Clone the repository:
 
