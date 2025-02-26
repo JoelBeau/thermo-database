@@ -16,6 +16,12 @@ sudo apt-get install pkg-config -y
 
 sudo service mysql start
 
+#Install Python libraries
+sudo apt-get install python3-pandas -y
+sudo apt-get install python3-mysql -y
+sudo apt-get install python3-tabulate -y
+sudo apt-get install python3-mysql-connector-python -y
+
 #Create the database
 sudo mysql <<EOF
 CREATE DATABASE IF NOT EXISTS thermo;
