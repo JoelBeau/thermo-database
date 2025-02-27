@@ -13,8 +13,8 @@ RUN echo "America/Chicago" > /etc/timezone && dpkg-reconfigure -f noninteractive
 # Make user
 RUN useradd -ms /bin/bash dbuser
 
-# Give test user sudo privileges
-RUN echo "test ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/test
+# Give user sudo privileges
+RUN echo "dbuser ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/test
 
 USER dbuser
 
