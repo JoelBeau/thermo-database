@@ -33,6 +33,12 @@ This project automates the creation and installation of a thermodynamics databas
    1. Download Docker Desktop for Windows from the official website: [Docker Desktop for Windows](https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=module)
    2. Follow the installation instructions provided on the website.
    3. Once installed, open Docker Desktop and ensure it is running.
+   4. Enable WSL 2 integration in Docker Desktop settings.
+   5. Restart Docker Desktop.
+   6. Check command line for successful installation:
+      ```bash
+         docker --version
+      ```
 
 ### MacOS
    1. Download Docker Desktop for Mac from the official website:  
