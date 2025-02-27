@@ -27,57 +27,57 @@ This project automates the creation and installation of a thermodynamics databas
    2. Follow the installation instructions provided on the website.
    3. Once installed, open Docker Desktop and ensure it is running.
 
-### How to use
+## How to use
 
-1. Clone the repository:
+   1. Clone the repository:
 
-   ```bash
-      git clone https://github.com/JoelBeau/thermo-database.git
-      cd thermo-database
-   ```
+      ```bash
+         git clone https://github.com/JoelBeau/thermo-database.git
+         cd thermo-database
+      ```
 
-2. Create a docker image
+   2. Create a docker image
 
-   ```bash
-      docker build --progess=tty -t thermo-database .
-   ```
-   Note: ```bash --progess=tty``` is optional, just shows each command running. You can also rename the image to anything you want.
+      ```bash
+         docker build --progess=tty -t thermo-database .
+      ```
+      Note: ```bash --progess=tty``` is optional, just shows each command running. You can also rename the image to anything you want.
 
-3. Run docker container interactively
+   3. Run docker container interactively
 
-   ```bash
-      docker run -it --name thermo-database thermo-database
-   ```
-   Note: you may change the name to anything you want, or not use it at all (docker will assign random name), 
-   but it is useful for stopping and starting the container.
+      ```bash
+         docker run -it --name thermo-database thermo-database
+      ```
+      Note: you may change the name to anything you want, or not use it at all (docker will assign random name), 
+      but it is useful for stopping and starting the container.
 
-4. Start MySQL server
-   
-   This will fail the first time, but it fixes itself.  After it fails, just run it again.
+   4. Start MySQL server
+      
+      This will fail the first time, but it fixes itself.  After it fails, just run it again.
 
-   ```bash
-      sudo service mysql start
-   ```
-   If anyone has a better way to do this, please let me know.
+      ```bash
+         sudo service mysql start
+      ```
+      If anyone has a better way to do this, please let me know.
 
-5. Run the python script for querying the database
+   5. Run the python script for querying the database
 
-   ```bash
-      table2cmd
-   ```
-   If you have suggestions for improving the script, please let me know.
+      ```bash
+         table2cmd
+      ```
+      If you have suggestions for improving the script, please let me know.
 
-6. Stop the docker container
+   6. Stop the docker container
 
-   ```bash
-      exit
-   ```
+      ```bash
+         exit
+      ```
 
-7. To start the container and use it again
+   7. To start the container and use it again
 
-   ```bash
-      docker start thermo-database
-      docker attach thermo-database
-   ```
+      ```bash
+         docker start thermo-database
+         docker attach thermo-database
+      ```
 
 
