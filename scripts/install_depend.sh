@@ -18,7 +18,7 @@ sudo service mysql start
 #Install Python libraries
 # sudo apt-get install python3-pandas -y
 sudo apt-get install python3-tabulate -y
-# sudo apt-get install python3-pip -y
+sudo apt-get install python3-pip -y
 
 pip install mysqlclient==2.1.1
 pip install mysql-connector-python
