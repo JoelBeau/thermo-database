@@ -2,10 +2,6 @@
 
 echo "Installing dependencies..."
 
-# Update and upgrade the system
-# sudo apt-get update -y
-# sudo apt-get full-upgrade -y
-
 #Install Dependencies applications and libraries
 sudo apt-get install mysql-server -y
 sudo apt-get install python3 -y
@@ -16,7 +12,7 @@ sudo apt-get install pkg-config -y
 sudo service mysql start
 
 #Install Python libraries
-# sudo apt-get install python3-pandas -y
+sudo apt-get install python3-pandas -y
 sudo apt-get install python3-tabulate -y
 sudo apt-get install python3-pip -y
 
