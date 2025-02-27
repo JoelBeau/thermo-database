@@ -1,9 +1,9 @@
 
 # Thermodynamics Database
-This project automates the creation and installation of a thermodynamics database, which stores common thermodynamic property tables, using MySQL and bash. Additionally, it includes a user-friendly Python script for querying the data, making it easy to retrieve thermodynamic properties with minimal effort.
+This project automates creating and installing a thermodynamics database, which stores common thermodynamic property tables, using MySQL and bash. Additionally, it includes a user-friendly Python script for querying the data, making it easy to retrieve thermodynamic properties with minimal effort.
 
 ## Notice
-   - This project is meant to run as a containerized application using Docker, tested on both Linux distribution (Ubuntu) and Windows (11) machines. I have not tested it on MacOS, but have provided instructions to download Docker Desktop for MacOS.  
+   This project is meant to run as a containerized application using Docker. It has been tested on both Linux distributions (Ubuntu) and Windows (11) machines. I have not tested it on MacOS, but I have provided instructions for downloading Docker Desktop for MacOS.  
    - If you are on a different Linux distribution other than Ubuntu, you may need to change the installation commands of docker to match your distribution.  
    - This project is a work in progress (as is everything in life), and I am open to suggestions for improvement. Please let me know if you have any ideas or feedback.
 
@@ -38,7 +38,7 @@ This project automates the creation and installation of a thermodynamics databas
    3. Once installed, open Docker Desktop and ensure it is running.
    4. Enable WSL 2 integration in Docker Desktop settings.
    5. Restart Docker Desktop.
-   6. Check command line for successful installation:
+   6. Check the command line (cmd) for successful installation:
       ```bash
          docker --version
       ```
@@ -49,7 +49,7 @@ This project automates the creation and installation of a thermodynamics databas
          [Docker Desktop for Mac (Apple Silicon)](https://desktop.docker.com/mac/main/arm64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=module)
    2. Follow the installation instructions provided on the website.
    3. Once installed, open Docker Desktop and ensure it is running.
-   4. Check command line (zsh) for successful installation:
+   4. Check the command line (zsh) for successful installation:
       ```zsh
          docker --version
       ```
@@ -68,14 +68,14 @@ This project automates the creation and installation of a thermodynamics databas
       ```bash
          docker build -t thermo-database .
       ```
-      Note: ```-t thermo-database``` is optional, tags the image with recognizable name. You can also rename the image to anything you want.
+      Note: ```-t thermo-database``` is optional, tags the image with a recognizable name. You can also rename the image to anything you want.
 
    3. Run docker container interactively
 
       ```bash
          docker run -it --name thermo-database thermo-database
       ```
-      Note: you may change the name to anything you want, or not use it at all (docker will assign random name), 
+      Note: you may change the name to anything you want, or not use it at all (docker will assign a random name), 
       but it is useful for stopping and starting the container.
 
    4. Start MySQL server
@@ -89,7 +89,7 @@ This project automates the creation and installation of a thermodynamics databas
 
       If anyone knows how to fix the warning or a better way to do it, please let me know.
 
-   5. Run the python script for querying the database
+   5. Run the Python script for querying the database
 
       ```bash
          table2cmd
