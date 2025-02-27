@@ -53,6 +53,12 @@ This project automates creating and installing a thermodynamics database, which 
          docker --version
       ```
 
+   No matter what OS you are using, ```docker --version``` should return something like this
+
+   ```bash
+      Docker version 27.5.1, build 9f9e405
+   ```
+
 ## How to use
 
    1. Clone the repository:
