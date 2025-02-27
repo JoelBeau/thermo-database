@@ -11,21 +11,21 @@ RUN apt-get install -y sudo tzdata
 RUN echo "America/Chicago" > /etc/timezone && dpkg-reconfigure -f noninteractive tzdata
 
 # Make user
-RUN useradd -ms /bin/bash test
+RUN useradd -ms /bin/bash dbuser
 
 # Give test user sudo privileges
 RUN echo "test ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/test
 
-USER appuser
+USER dbuser
 
-WORKDIR /home/appuser
+WORKDIR /home/dbuser
 
 RUN sudo apt-get install git -y && git clone https://github.com/JoelBeau/thermo-database.git
 
-WORKDIR /home/appuser/thermo-database
+WORKDIR /home/dbuser/thermo-database
 
 RUN sudo ./setup.sh
 
-RUN echo 'export PATH=$PATH:/home/test/thermo-database' >> /home/appuser/.bashrc
+RUN echo 'export PATH=$PATH:/home/test/thermo-database' >> /home/dbuser/.bashrc
 
 ENV DEBIAN_FRONTEND=interactive
