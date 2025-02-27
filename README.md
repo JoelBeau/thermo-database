@@ -8,10 +8,17 @@ This project automates the creation and installation of a thermodynamics databas
 -This project is a work in progress, and I am open to suggestions for improvement. Please let me know if you have any ideas or feedback.
 
 ## Dependencies
-- Docker
-- MySQL
-- Python 3
-- Python libraries: mysql-connector-python, pandas, mysqlclient
+
+### Device
+   - Linux distribution (Ubuntu preferred)
+   - Windows 10 or later
+
+### Database
+   - Docker
+   - MySQL
+   - Python 3
+   - Python libraries: mysql-connector-python, pandas, mysqlclient
+
 
 
 ## Install Docker if not already installed
@@ -39,9 +46,9 @@ This project automates the creation and installation of a thermodynamics databas
    2. Create a docker image
 
       ```bash
-         docker build --progess=tty -t thermo-database .
+         docker build -t thermo-database .
       ```
-      Note: ```bash --progess=tty``` is optional, just shows each command running. You can also rename the image to anything you want.
+      Note: ```-t thermo-database``` is optional, tags the image with recognizable name. You can also rename the image to anything you want.
 
    3. Run docker container interactively
 
