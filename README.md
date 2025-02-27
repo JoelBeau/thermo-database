@@ -7,7 +7,7 @@ This project automates creating and installing a thermodynamics database, which 
    - If you are on a different Linux distribution other than Ubuntu, you may need to change the installation commands of docker to match your distribution.  
    - This project is a work in progress (as is everything in life), and I am open to suggestions for improvement. Please let me know if you have any ideas or feedback.
 
-### Devices Supported
+## Devices Supported
    - Linux distribution (Ubuntu preferred)
    - Windows 10 or later
    - MacOS
