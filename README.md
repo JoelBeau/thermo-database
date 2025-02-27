@@ -35,7 +35,7 @@ This project automates the creation and installation of a thermodynamics databas
    3. Once installed, open Docker Desktop and ensure it is running.
 
 ### MacOS
-   1. Download Docker Desktop for Mac from the official website: 
+   1. Download Docker Desktop for Mac from the official website:  
          [Docker Desktop for Mac (Intel)](https://desktop.docker.com/mac/main/amd64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=module)  
          [Docker Desktop for Mac (Apple Silicon)](https://desktop.docker.com/mac/main/arm64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=module)
    2. Follow the installation instructions provided on the website.
