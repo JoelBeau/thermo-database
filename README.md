@@ -60,12 +60,12 @@ This project automates the creation and installation of a thermodynamics databas
 
    4. Start MySQL server
       
-      This will fail the first time, but it fixes itself.  After it fails, just run it again.
+      This will give a warning, but with my testing, there are no issues.
 
       ```bash
          sudo service mysql start
       ```
-      If anyone has a better way to do this, please let me know.
+      If anyone knows how to fix the warning, please let me know.
 
    5. Run the python script for querying the database
 
