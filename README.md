@@ -110,8 +110,8 @@ This project automates creating and installing a thermodynamics database, which 
    7. To start the container and use it again
 
       ```bash
-         sudo apt-get update
-         sudo apt-get install docker -y
+         docker start thermo-database
+         docker attach thermo-database
       ```
 
 ## Example of queries ran by the python script
