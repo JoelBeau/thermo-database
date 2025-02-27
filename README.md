@@ -78,8 +78,10 @@ This project automates the creation and installation of a thermodynamics databas
       ```bash
          sudo service mysql start
       ```
-      If anyone knows how to fix the warning, please let me know.
+      Note: You will have to start the server every time you start the container.
 
+      If anyone knows how to fix the warning or a better way to do it, please let me know.
+      
    5. Run the python script for querying the database
 
       ```bash
