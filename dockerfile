@@ -16,13 +16,13 @@ RUN useradd -ms /bin/bash test
 # Give test user sudo privileges
 RUN echo "test ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/test
 
-USER test
+USER appuser
 
-WORKDIR /home/test
+WORKDIR /home/appuser
 
 RUN sudo apt-get install git -y && git clone https://github.com/JoelBeau/thermo-database.git
 
-WORKDIR /home/test/thermo-database
+WORKDIR /home/appuser/thermo-database
 
 RUN sudo ./setup.sh
 
