@@ -26,6 +26,6 @@ WORKDIR /home/appuser/thermo-database
 
 RUN sudo ./setup.sh
 
-RUN echo 'export PATH=$PATH:/home/test/thermo-database' >> /home/test/.bashrc
+RUN echo 'export PATH=$PATH:/home/test/thermo-database' >> /home/appuser/.bashrc
 
 ENV DEBIAN_FRONTEND=interactive
