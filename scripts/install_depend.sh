@@ -32,7 +32,7 @@ echo "Creating MySQL user thermo_user..."
 
 sudo mysql <<EOF
 CREATE USER 'thermo_user'@'localhost' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON thermo.* TO 'thermo_user'@'localhost';
+GRANT SELECT ON thermo.* TO 'thermo_user'@'localhost';
 EOF
 
 echo "thermo_user created and given access to thermo database"
