@@ -19,14 +19,17 @@ This project automates the creation and installation of a thermodynamics databas
    - Python 3
    - Python libraries: mysql-connector, pandas, mysqlclient
 
-
-
 ## Install Docker if not already installed
 
 ### Ubuntu
    ```bash
       sudo apt-get update
       sudo apt-get install docker -y
+   ```
+   Check command line for successful installation:
+   
+   ```bash
+      docker --version
    ```
 
 ### Windows
@@ -45,7 +48,11 @@ This project automates the creation and installation of a thermodynamics databas
          [Docker Desktop for Mac (Intel)](https://desktop.docker.com/mac/main/amd64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=module)  
          [Docker Desktop for Mac (Apple Silicon)](https://desktop.docker.com/mac/main/arm64/Docker.dmg?utm_source=docker&utm_medium=webreferral&utm_campaign=dd-smartbutton&utm_location=module)
    2. Follow the installation instructions provided on the website.
-   3. Once installed, open Docker Desktop and ensure it is running. 
+   3. Once installed, open Docker Desktop and ensure it is running.
+   4. Check command line (zsh) for successful installation:
+      ```zsh
+         docker --version
+      ```
 
 ## How to use
 
@@ -81,7 +88,7 @@ This project automates the creation and installation of a thermodynamics databas
       Note: You will have to start the server every time you start the container.
 
       If anyone knows how to fix the warning or a better way to do it, please let me know.
-      
+
    5. Run the python script for querying the database
 
       ```bash
@@ -98,8 +105,8 @@ This project automates the creation and installation of a thermodynamics databas
    7. To start the container and use it again
 
       ```bash
-         docker start thermo-database
-         docker attach thermo-database
+         sudo apt-get update
+         sudo apt-get install docker -y
       ```
 
 
