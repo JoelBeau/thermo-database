@@ -116,5 +116,5 @@ This project automates creating and installing a thermodynamics database, which 
    2. Example of the python script running getting data from a specific table with a specific tempature
       <img src="images/get_data_from_table_with_specific_temp.png" alt="Example of the python script running getting data from a specific table with a specific query" width="600"/>
 
-   3. Example of the python script running getting data from a specific table with a specific tempature and pressure range
+   3. Example of the python script running getting data from a specific table with a specific tempature and pressure range  
       <img src="images/get_all_data_from_table_w_superheated_pa_range.png" alt="Example of the python script running getting data from a specific table with a specific query" width="600"/>
