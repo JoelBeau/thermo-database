@@ -83,31 +83,20 @@ This project automates creating and installing a thermodynamics database, which 
       Note: you may change the name to anything you want, or not use it at all (docker will assign a random name), 
       but it is useful for stopping and starting the container.
 
-   4. Start MySQL server
-      
-      This will give a warning, but with my testing, there are no issues.
-
-      ```bash
-         sudo service mysql start
-      ```
-      Note: You will have to start the server every time you start the container.
-
-      If anyone knows how to fix the warning or a better way to do it, please let me know.
-
-   5. Run the Python script for querying the database
+   4. Run the Python script for querying the database
 
       ```bash
          table2cmd
       ```
       If you have suggestions for improving the script, please let me know.
 
-   6. Stop the docker container
+   5. Stop the docker container
 
       ```bash
          exit
       ```
 
-   7. To start the container and use it again
+   6. To start the container and use it again
 
       ```bash
          docker start thermo-database
